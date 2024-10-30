@@ -14,7 +14,7 @@ class LoginPage {
   async login(email, password) {
     await this.page.frameLocator('iframe').locator('input[placeholder="email@email.com"]').fill(email);
     await this.page.frameLocator('iframe').locator('input[placeholder="Password"]').fill(password);
-    await this.page.frameLocator('iframe').locator('button.ry-button--gradient-yellow').click(); // Вказуємо клас кнопки
+    await this.page.frameLocator('iframe').locator('button.ry-button--gradient-yellow').click();
   }
 
   async checkErrorMessages() {

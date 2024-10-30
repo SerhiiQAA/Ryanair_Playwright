@@ -38,17 +38,21 @@ module.exports = defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-    // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+    },
 
+    { 
+      name: 'Microsoft Edge', 
+      use: { ...devices['Desktop Edge'] },
+    }
     // {
     //   name: 'webkit',
     //   use: { ...devices['Desktop Safari'] },
     // },
 
-    /* Test against mobile viewports. */
+    // /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
     //   use: { ...devices['Pixel 5'] },
